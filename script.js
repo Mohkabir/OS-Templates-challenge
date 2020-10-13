@@ -1,9 +1,19 @@
-let menuimg = document.querySelector('#menuBar');
+$(document).ready(function(){
+  $('#menuBar').click(function(){
+    $('#navigation').slideToggle(1000);
+  });
 
-let nav = document.querySelector('#navigation');
+  $('#top').click(function(){
+    var userLocation = window.location.href;
+  var currentUrl = userLocation.substring(userLocation.lastIndexOf('#')+1);
 
-menuimg.addEventListener('click',function(){
-  nav.classList.toggle('show')
-})
+  if(currentUrl == 'home'){
+    $('html, body').animate({
+      scrollTop: $('#scroll-' + currentUrl).offset().top
+    },2000);
+  }
+  })
+  
+});
 
 
