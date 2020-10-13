@@ -10,7 +10,7 @@ $(document).ready(function(){
   if(currentUrl == 'home'){
     $('html, body').animate({
       scrollTop: $('#scroll-' + currentUrl).offset().top
-    },2000);
+    },1000);
   }
   })
   
