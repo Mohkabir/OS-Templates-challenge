@@ -1,3 +1,3 @@
 # OS-Templates-challenge
 OS Templates challenges
-view at 
+view at  https://mohkabir.github.io/Templates-challenge/
