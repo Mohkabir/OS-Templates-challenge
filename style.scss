@@ -9,8 +9,11 @@ body,h1,h3,p,ul,li{
 img{
   width: 100%;
 }
-.show{
-  display: block;
+.green{
+  color: #178A27;
+}
+.blue{
+  color: #1686C1;
 }
 .box1,.box2,.box3,.box4,.box5,.box6{
   width: 80%;
@@ -23,23 +26,34 @@ p{
   margin: 0.5em 1em;
 }
 button{
-  padding: 0.5em;
+  padding: 0.5em 1em;
   border-radius: 10px;
   margin: 1em ;
   font-size: 1em;
+  border: none;
 }
 body{
-  font-size: 20px;
+  font-size: 16px;
   scroll-behavior: smooth;
   nav{
-    img{
-      width: 50px;
-      border-radius: 10px;
-      position: fixed;
-      right:0;
-      top: 15px;
-      margin-right: 20px;
+    #menuBar{
+      width: 40px;
+      background-color: #000000;
+      border-radius: 4px;
+        position: fixed;
+        right:0;
+        text-align: center;
+        top: 15px;
+        margin-right: 20px;
+        padding: 0.5em;
+      i{
+        width: 25px;
+        font-size: 25px;
+        
+        color: #FFFFFF;
+      }
     }
+   
     ul{
       background-color:#383E4C ;
       text-align: center;
@@ -76,6 +90,7 @@ body{
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       margin-bottom: 2em;
+   
       .box1{
         grid-column: span 12;
         button{
@@ -124,7 +139,7 @@ body{
       width: 10%;
       position: fixed;
       right:0;
-      top: 450px;
+      top: 530px;
     }
     .section_2{
       display: grid;
@@ -179,14 +194,16 @@ body{
     }
     .section_3{
       background-image: url('./images/13.jpg');
-      padding: 1em;
+      background-position: center;
+      padding: 3em 1em;
       h1{
         color: #F2F2F2;
         font-weight: bolder;
         text-align: center;
+        margin: 2em 0em;
       }
       .form{
-        background-color: #EFE8DE;
+        background-color: rgba(239, 232, 222,0.3);
         border-radius: 10px;
         padding: 0.5em;
         width: 100%;
@@ -196,16 +213,18 @@ body{
         input{
           width: 100%;
           border-radius: 5px;
-          background-color:#EFE8DE ;
+          background-color: rgba(239, 232, 222,0.3);
           padding: 1em;
+          border: none;
           margin: 0.5em 0;
         }
         textarea{
           width: 100%;
           border-radius: 5px;
-          background-color:#EFE8DE ;
+          background-color: rgba(239, 232, 222,0.3);
           margin: 0.5em 0;
           padding: 0.5em;
+          border: none;
         }
         input[type=submit]{
           width: 30%;
@@ -334,7 +353,7 @@ body{
       .section_3{
         padding: 5em 0px;
         .container{
-          width: 60%;
+          width: 80%;
           margin: 0px auto;
           form{
             display: grid;
@@ -357,10 +376,10 @@ body{
               width: 30%;
               background-color:#262628;
               color: #F2F2F2;
-              border-color: #F2F2F2;
               border-radius: 10px;
               grid-column: 6/11;
               grid-row: 6;
+              border: 2px solid #FFFFFF;
             }
           }
         }
