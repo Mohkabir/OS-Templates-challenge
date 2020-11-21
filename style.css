@@ -13,8 +13,12 @@ img {
   width: 100%;
 }
 
-.show {
-  display: block;
+.green {
+  color: #178A27;
+}
+
+.blue {
+  color: #1686C1;
 }
 
 .box1, .box2, .box3, .box4, .box5, .box6 {
@@ -30,24 +34,34 @@ p {
 }
 
 button {
-  padding: 0.5em;
+  padding: 0.5em 1em;
   border-radius: 10px;
   margin: 1em;
   font-size: 1em;
+  border: none;
 }
 
 body {
-  font-size: 20px;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
-body nav img {
-  width: 50px;
-  border-radius: 10px;
+body nav #menuBar {
+  width: 40px;
+  background-color: #000000;
+  border-radius: 4px;
   position: fixed;
   right: 0;
+  text-align: center;
   top: 15px;
   margin-right: 20px;
+  padding: 0.5em;
+}
+
+body nav #menuBar i {
+  width: 25px;
+  font-size: 25px;
+  color: #FFFFFF;
 }
 
 body nav ul {
@@ -153,7 +167,7 @@ body main .top {
   width: 10%;
   position: fixed;
   right: 0;
-  top: 450px;
+  top: 530px;
 }
 
 body main .section_2 {
@@ -224,17 +238,19 @@ body main .section_2 .box5 button:hover {
 
 body main .section_3 {
   background-image: url("./images/13.jpg");
-  padding: 1em;
+  background-position: center;
+  padding: 3em 1em;
 }
 
 body main .section_3 h1 {
   color: #F2F2F2;
   font-weight: bolder;
   text-align: center;
+  margin: 2em 0em;
 }
 
 body main .section_3 .form {
-  background-color: #EFE8DE;
+  background-color: rgba(239, 232, 222, 0.3);
   border-radius: 10px;
   padding: 0.5em;
   width: 100%;
@@ -244,17 +260,19 @@ body main .section_3 .form {
 body main .section_3 form input {
   width: 100%;
   border-radius: 5px;
-  background-color: #EFE8DE;
+  background-color: rgba(239, 232, 222, 0.3);
   padding: 1em;
+  border: none;
   margin: 0.5em 0;
 }
 
 body main .section_3 form textarea {
   width: 100%;
   border-radius: 5px;
-  background-color: #EFE8DE;
+  background-color: rgba(239, 232, 222, 0.3);
   margin: 0.5em 0;
   padding: 0.5em;
+  border: none;
 }
 
 body main .section_3 form input[type=submit] {
@@ -381,7 +399,7 @@ body footer .copyright {
     padding: 5em 0px;
   }
   body main .section_3 .container {
-    width: 60%;
+    width: 80%;
     margin: 0px auto;
   }
   body main .section_3 .container form {
@@ -414,13 +432,13 @@ body footer .copyright {
     width: 30%;
     background-color: #262628;
     color: #F2F2F2;
-    border-color: #F2F2F2;
     border-radius: 10px;
     -ms-grid-column: 6;
     -ms-grid-column-span: 5;
     grid-column: 6/11;
     -ms-grid-row: 6;
     grid-row: 6;
+    border: 2px solid #FFFFFF;
   }
 }
 /*# sourceMappingURL=style.css.map */
