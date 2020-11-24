@@ -185,7 +185,7 @@ body main .top {
   width: 10%;
   position: fixed;
   right: 10px;
-  top: 515px;
+  top: 505px;
 }
 
 body main .section_2 {
@@ -446,7 +446,6 @@ body footer .copyright {
   body main .section_3 .container form input {
     width: 100%;
     border-radius: 5px;
-    background-color: #EFE8DE;
     padding: 1em;
     margin: 0.5em 0;
     -ms-grid-column: 1;
