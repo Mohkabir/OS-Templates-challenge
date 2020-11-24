@@ -182,7 +182,7 @@ body main .section_1 .box5 button:hover {
 }
 
 body main .top {
-  width: 10%;
+  width: 50px;
   position: fixed;
   right: 10px;
   top: 505px;
