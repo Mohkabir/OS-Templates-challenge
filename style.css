@@ -108,6 +108,11 @@ body main .section_1_header h1 {
   font-size: 2.7em;
   font-weight: 100;
   text-shadow: 3px 3px 2px #000000;
+  margin: 0;
+}
+
+body main .section_1_header h3 {
+  margin: 0;
 }
 
 body main .section_1 {
@@ -369,6 +374,7 @@ body footer .copyright {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 1em;
   }
   body nav ul li {
     border: 3px solid #49505F;
@@ -383,7 +389,8 @@ body footer .copyright {
   body main .section_1_header {
     padding: 9em 0em;
     margin: 0;
-    margin-top: 4em;
+    margin-top: 0em;
+    font-size: 1.6em;
   }
   body main .section_1 {
     margin-bottom: 2em;

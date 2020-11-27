@@ -94,6 +94,10 @@ body{
         font-size: 2.7em;
         font-weight: 100;
         text-shadow: 3px 3px 2px #000000;
+        margin: 0;
+      }
+      h3{
+        margin: 0;
       }
     }
     .section_1{
@@ -321,6 +325,7 @@ body{
         right: 0;
         display: flex;
         justify-content: center;
+        padding: 1em;
         li{
           border: 3px solid #49505F;
           a{
@@ -337,7 +342,8 @@ body{
       .section_1_header{
         padding: 9em 0em;
         margin: 0;
-        margin-top: 4em;
+        margin-top: 0em;
+        font-size: 1.6em;
         
       }
       .section_1{
