@@ -52,16 +52,16 @@ body nav #menuBar {
   background-color: #000000;
   border-radius: 4px;
   position: fixed;
-  right: 0;
+  right: 15px;
   text-align: center;
   top: 15px;
-  margin-right: 20px;
-  padding: 0.3em;
+  padding: 0.3em 0.5em;
 }
 
 body nav #menuBar i {
   width: 25px;
-  font-size: 15px;
+  font-size: 25px;
+  font-weight: none;
   color: #FFFFFF;
 }
 
@@ -76,15 +76,13 @@ body nav ul {
   display: none;
 }
 
-body nav ul li {
-  margin: 0.5em;
-  border-bottom: 1px solid #F2F2F2;
-}
-
 body nav ul li a {
   text-decoration: none;
   color: #F2F2F2;
   display: block;
+  width: 100%;
+  padding: 1em;
+  border-bottom: 1px solid #999999;
 }
 
 body nav ul li:hover {
@@ -99,14 +97,15 @@ body main .section_1_header {
   background-image: url("./images/01.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
+  padding: 3em 0em;
+  background-attachment: fixed;
+  background-position: top;
   text-align: center;
-  padding: 2em 0em;
   color: #F2F2F2;
 }
 
 body main .section_1_header h1 {
-  font-size: 1.7em;
+  font-size: 2.7em;
   font-weight: 100;
   text-shadow: 3px 3px 2px #000000;
 }
@@ -185,7 +184,7 @@ body main .top {
   width: 50px;
   position: fixed;
   right: 10px;
-  top: 505px;
+  bottom: 20px;
 }
 
 body main .section_2 {
@@ -201,6 +200,7 @@ body main .section_2 .section_2_header {
   background-image: url("./images/07.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding: 2em;
   text-align: center;
   color: #F2F2F2;
@@ -262,6 +262,7 @@ body main .section_2 .box5 button:hover {
 body main .section_3 {
   background-image: url("./images/13.jpg");
   background-position: center;
+  background-attachment: fixed;
   padding: 3em 1em;
 }
 
@@ -346,15 +347,22 @@ body footer .copyright {
 
 @media (min-width: 800px) {
   body {
+    padding: 0;
     font-size: 20px;
+  }
+  body nav {
+    width: 100%;
+    margin: 0;
   }
   body nav img {
     display: none;
   }
   body nav ul {
     width: 100%;
+    margin: 0;
     position: fixed;
     top: 0px;
+    right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -373,12 +381,16 @@ body footer .copyright {
     background-color: #49505F;
   }
   body main .section_1_header {
-    padding: 9em;
+    padding: 9em 0em;
+    margin: 0;
     margin-top: 4em;
   }
   body main .section_1 {
     margin-bottom: 2em;
     gap: 0px;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    padding: 2em;
   }
   body main .section_1 .box1 {
     grid-column: span 4;
@@ -408,6 +420,8 @@ body footer .copyright {
         grid-template-columns: repeat(12, 1fr);
     grid-column: span 12;
     margin-bottom: 2em;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
   }
   body main .section_2 .section_2_header {
     padding: 6em 0px;
@@ -416,18 +430,23 @@ body footer .copyright {
   }
   body main .section_2 .box1 {
     grid-column: span 3;
+    width: 90%;
   }
   body main .section_2 .box2 {
     grid-column: span 3;
+    width: 90%;
   }
   body main .section_2 .box3 {
     grid-column: span 3;
+    width: 90%;
   }
   body main .section_2 .box4 {
     grid-column: span 3;
+    width: 90%;
   }
   body main .section_2 .box5 {
     grid-column: span 12;
+    width: 80%;
   }
   body main .section_3 {
     padding: 5em 0px;
